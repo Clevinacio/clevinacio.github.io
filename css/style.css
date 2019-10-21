@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #11253b, #181617);
+  height: 100%;
+  width: 100%;
+  text-align: : center;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body h1 {
+  color: white;
+}
+
+body h2 {
+  color: white;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.center h1 {
+  text-align: center;
+}
+
+.center h2 {
+  text-align: center;
+}
+
+.center form {
+  width: 100%;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.button-group button {
+  margin: 10px 2px;
+}

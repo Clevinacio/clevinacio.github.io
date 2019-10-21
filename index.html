@@ -2,132 +2,299 @@
 <html lang="pt-br" dir="ltr">
 
 <head>
-  <meta charset="utf-8" content="width=device-width, initial-scale=1">
-  <title>Portifólio - Cleverton Inácio - WEB I</title>
+  <meta charset="utf-8">
+  <title>Biblioteca - WEB I</title>
+  <!-- Bootstrap Style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="icon" type="imagem/png" href="img/icon.png">
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous|Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1907bb6a88.js"></script>
-
+  <!-- Personal Style  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="header">
-    <div class="color">
-      <header id="main-header">
-        <nav class="nav-header">
-          <div class="container">
-            <div class="logo">
-              <a href="#">Cleverton</a>
-            </div>
-            <div class="menu-header">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#exp">Exeperiências</a></li>
-                <li><a href="#interests">Áreas de interesse</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="main-text">
-        <div class="container">
-          <div class="banner">
-            <h2>Olá, sou Cleverton</h2>
-            <p>Aluno do <span>BTI</span> e <span>gamer</span> casual</p>
-            <a href="http://facebook.com.br/clevinacio" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="http://github.com/Clevinacio" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="http://instragam.com/clevinacio" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Biblioteca</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Livros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" data-toggle="modal" href="#modalCadastroLivro">Cadastro</a>
+            <a class="dropdown-item" href="#consultaLivros">Consulta</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filmes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" data-toggle="modal" href="#modalCadastroFilme">Cadastro</a>
+            <a class="dropdown-item" href="#consultaFilmes">Consulta</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jogos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" data-toggle="modal" href="#modalCadastroJogo">Cadastro</a>
+            <a class="dropdown-item" href="#consultaJogos">Consulta</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <section id="about">
-    <div class="container">
-      <div class="centralized-div">
-        <div class="main-about">
-          <h2>Sobre mim</h2>
-        </div>
-        <div class="row">
-          <div class="text-about">
-            <p>Formado como técnico em informática pelo IFRN (Instituto Federal de Educação Ciência e Tecnologia do Rio grande do Norte), hoje curso Bacharel em Tecnologia da Informação na UFRN e atuo como estaigário no mesmo campus que me formei.
-            </p>
-            <p>Curto jogos eletrônicos e séries.</p>
-          </div>
-          <div class="image">
-            <img src="img/about-profile.jpg" alt="Foto perfil">
-          </div>
-          <div class="items">
-            <span>Esse sou eu</span>
-            <img src="img/seta.png" alt="seta" class="seta">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="exp">
-    <div class="container">
-      <div class="centralized-div">
-        <div class="main-about">
-          <h2>Experiências profissionais</h2>
-        </div>
-        <div class="row">
-          <div class="text-exp">
-            <p>Profissionalmente, ainda não desenvolvi nenhum projeto, porém possuo projetos acadêmicos no meu Github.</p>
-            <a href="http://github.com/Clevinacio" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="interests">
-    <div class="container">
-      <div class="centralized-div">
-        <div class="main-about">
-          <h2>Áreas de interesse</h2>
-        </div>
-        <div class="row">
-          <div class="box-interests">
-            <div class="text-interests">
-              <i class="fas fa-gamepad"></i>
-              <h5>DESENVOLVIMENTO <br> DE JOGOS</h5>
-              <p>A paixão por jogos me faz querer aprender mais e desenvolver jogos.</p>
-            </div>
-            <div class="text-interests">
-              <i class="fab fa-android"></i>
-              <h5>SISTEMAS MOBILE</h5>
-              <p>Com o mercado mobile crescendo rapidamente, é interssante o aprendizado dessa tecnologia.</p>
-            </div>
-            <div class="text-interests">
-              <i class="fas fa-laptop-code"></i>
-              <h5>BACK END</h5>
-              <p>Sites com grande quantidade de armazenamento de informação sempre me fascinaram. Gostaria de conhecer mais sobre essa área.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <footer class="footer">
+  <!-- Tela inicial -->
+  <section id="home">
     <div class="container">
       <div class="row">
-        <div class="footer-text">
-          <p>© Feito por <span>Cleverton Inácio</span> </p>
+        <div class="center">
+          <h1 class="">Bem vindo à Biblioteca!</h1>
+          <h2>Escolha uma opção abaixo</h2>
+          <div class="button-group">
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalCadastroLivro">
+              Cadastrar livro
+            </button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalCadastroFilme">
+              Cadastrar Filme
+            </button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalCadastroJogo">
+              Cadastrar jogo
+            </button>
+            <br>
+          </div>
+
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- Cadastro Livros -->
+  <section id="cadastroLivro">
+    <div class="modal fade" id="modalCadastroLivro" tabindex="-1" role="dialog" aria-labelledby="cadastroLivroModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cadastroLivroLabel">Cadastro de livro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="tituloLivroLabel">Título</label>
+                <input type="text" class="form-control" id="tituloLivro" aria-describedby="tituloLivro" placeholder="Título" required>
+              </div>
+              <div class="form-group">
+                <label for="autorLabel">Autor</label>
+                <input type="text" class="form-control" id="autor" aria-describedby="autorLivro" placeholder="Autor" required>
+              </div>
+              <div class="form-group">
+                <label for="paginasLabel">Páginas</label>
+                <input type="text" class="form-control" id="paginas" aria-describedby="paginasLivro" placeholder="Páginas" required>
+              </div>
+              <div class="form-group">
+                <label for="statusLivroLabel">Status</label>
+                <select class="form-control" id="statusLivro">
+                  <option>Lido</option>
+                  <option>Não lido</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark" onclick="cadastrarLivro()" data-dismiss="modal">Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulta Livros -->
+  <section id="consultaLivros" class="visible">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <h1 class="">Livros cadastrados</h1>
+        </div>
+        <table id="tableLivros" class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Título</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Páginas</th>
+              <th scope="col">Status</th>
+              <th scope="col">Apagar</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTableLivro">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cadastro Filmes -->
+  <section id="cadastroFilme">
+    <div class="modal fade" id="modalCadastroFilme" tabindex="-1" role="dialog" aria-labelledby="cadastroFilmeModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cadastroFilmeHead">Cadastro de filme</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="tituloFilmeLabel">Título</label>
+                <input type="text" class="form-control" id="tituloFilme" aria-describedby="tituloFilme" placeholder="Título" required>
+              </div>
+              <div class="form-group">
+                <label for="diretorLabel">Diretor</label>
+                <input type="text" class="form-control" id="diretor" aria-describedby="diretorFilme" placeholder="Diretor" required>
+              </div>
+              <div class="form-group">
+                <label for="duracaoLabel">Duração</label>
+                <input type="text" class="form-control" id="duracao" aria-describedby="duracaoFilme" placeholder="Duração" required>
+              </div>
+              <div class="form-group">
+                <label for="statusFilmeLabel">Status</label>
+                <select class="form-control" id="statusFilme">
+                  <option>Assistido</option>
+                  <option>Não assistido</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark" onclick="cadastrarFilme()" data-dismiss="modal">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulta Filmes -->
+  <section id="consultaFilmes" class="visible">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <h1 class="">Filmes cadastrados</h1>
+        </div>
+        <table id="tableFilmes" class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Título</th>
+              <th scope="col">Diretor</th>
+              <th scope="col">Duração</th>
+              <th scope="col">Status</th>
+              <th scope="col">Apagar</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTableFilmes">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cadastro Jogos -->
+  <section id="cadastroJogo">
+    <div class="modal fade" id="modalCadastroJogo" tabindex="-1" role="dialog" aria-labelledby="cadastroJogoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cadastroJogoHead">Cadastro de Jogo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="tituloJogoLabel">Título</label>
+                <input type="text" class="form-control" id="tituloJogo" aria-describedby="tituloJogo" placeholder="Título" required>
+              </div>
+              <div class="form-group">
+                <label for="desenvolvedoraLabel">Desenvolvedora</label>
+                <input type="text" class="form-control" id="desenvolvedora" aria-describedby="desenvolvedoraJogo" placeholder="Desenvolvedora" required>
+              </div>
+              <div class="form-group">
+                <label for="plataformaJogoLabel">Plataforma</label>
+                <select class="form-control" id="plataforma">
+                  <option>PC</option>
+                  <option>Mobile</option>
+                  <option>Console (Xbox,PS4,Switch)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="statusJogoLabel">Status</label>
+                <select class="form-control" id="statusJogo">
+                  <option>Finalizado</option>
+                  <option>Não finalizado</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark" onclick="cadastrarJogo()" data-dismiss="modal">Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulta Jogos -->
+  <section id="consultaJogos">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <h1 class="">Jogos cadastrados</h1>
+        </div>
+        <table id="tableJogos" class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th> <!-- jquery -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <th scope="col">Título</th>
+              <th scope="col">Desenvolvedora</th>
+              <th scope="col">Plataforma</th>
+              <th scope="col">Status</th>
+              <th scope="col">Apagar</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTableJogos">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Bootstrap import  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Personal JS -->
+  <script type="text/javascript" src="js/functions.js"></script>
 </body>
 
 </html>
