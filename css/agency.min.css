@@ -169,15 +169,39 @@ img::-moz-selection {
 }
 
 #carousel {
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
+#carousel .background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+@media (max-width:991px) {
+  #carousel .background {
+    background-size: cover;
+    /* To make the background image looks good */
+  }
+}
+
 header.masthead {
   text-align: center;
   color: #fff;
+}
+
+header.masthead .container {
+  position: absolute;
+  /* To make the div to be place anywhere. It is out of the document flow */
+  top: 50px;
+  /* The distance between the div with the top of document */
+  left: 0px;
+  /* Make the div full width */
+  right: 0px;
+  /* Make the div full width */
 }
 
 header.masthead .intro-text {
