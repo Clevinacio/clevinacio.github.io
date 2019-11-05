@@ -262,6 +262,23 @@ header.masthead .intro-text .intro-heading {
   text-transform: none
 }
 
+.description {
+  border-left: 1px solid #328cea;
+}
+
+.description p {
+  font-size: 20px;
+}
+
+.description2 {
+  text-align: right;
+  border-right: 1px solid #328cea;
+}
+
+.description2 p {
+  font-size: 20px;
+}
+
 .team-member {
   margin-bottom: 50px;
   text-align: center
@@ -291,8 +308,10 @@ section#contact .section-heading {
   color: #000000
 }
 
-section#contact .contact-phone {
-  border-left: 1px solid #ddd;
+@media (min-width:768px) {
+  section#contact .contact-phone {
+    border-left: 1px solid #ddd;
+  }
 }
 
 .footer {
