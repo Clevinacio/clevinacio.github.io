@@ -147,7 +147,7 @@ img::-moz-selection {
   color: #3886c6
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -200,7 +200,7 @@ header.masthead {
 }
 
 header.masthead .container {
-  height: auto;
+  height: 260px;
   position: relative;
   margin: 0 auto;
 }
@@ -235,7 +235,7 @@ header.masthead .intro-text .intro-heading {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-@media (min-width:768px) {
+@media (min-width:903px) {
   .carousel-inner {
     max-height: 100vh;
     position: absolute;
@@ -251,7 +251,7 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-text {
     color: white;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 10px;
   }
 
@@ -276,7 +276,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   header.masthead .intro-text img {
-    width: 25%;
+    width: 20%;
   }
 }
 
