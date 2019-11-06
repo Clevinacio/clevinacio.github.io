@@ -101,11 +101,11 @@ img::-moz-selection {
 
 .bg-light {
   background-color: rgba(93, 158, 236, 0.2) !important;
-  color: white;
+  color: rgb(2, 127, 189);
 }
 
 .bg-light h2, h4 {
-  text-shadow: 1px 1px 1px #7A7A7A;
+  text-shadow: 0.5px 0.5px 1px #7A7A7A;
 }
 
 #mainNav {
