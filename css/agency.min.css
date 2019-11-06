@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-section h2.section-heading {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 15px
 }
@@ -100,8 +100,12 @@ img::-moz-selection {
 }
 
 .bg-light {
-  background-color: rgba(93, 158, 236, 0.42) !important;
+  background-color: rgba(93, 158, 236, 0.2) !important;
   color: white;
+}
+
+.bg-light h2, h4 {
+  text-shadow: 1px 1px 1px #7A7A7A;
 }
 
 #mainNav {
@@ -173,22 +177,25 @@ img::-moz-selection {
   }
 }
 
-#carousel .background {
+header#carousel {
+  position: relative;
+  height: auto;
+}
+
+header#carousel .background {
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .carousel-inner {
-  max-height: 100vh;
+  max-height: 260px;
   position: absolute;
 }
 
 header.masthead {
-  max-width: auto;
-  max-height: 100vh;
   text-align: center;
-  color: #fff;
+  width: 100%;
   position: relative;
 }
 
@@ -199,13 +206,18 @@ header.masthead .container {
 }
 
 header.masthead .intro-text {
+  color: white;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 10px;
 }
 
 header.masthead .intro-text img {
   width: 80px;
+}
+
+header.masthead .carousel-indicators {
+  position: relative;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -215,7 +227,7 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 10px;
@@ -223,8 +235,27 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width:768px) {
+  .carousel-inner {
+    max-height: 100vh;
+    position: absolute;
+  }
+
+  header.masthead {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
   header.masthead .intro-text {
-    padding-top: 120px;
+    color: white;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  header.masthead .intro-text {
+    padding-top: 130px;
     padding-bottom: 210px;
   }
 
@@ -244,7 +275,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   header.masthead .intro-text img {
-    width: 15%;
+    width: 25%;
   }
 }
 
@@ -253,21 +284,60 @@ header.masthead .intro-text .intro-heading {
   text-transform: none
 }
 
+.service-row {
+  margin-bottom: 20px;
+}
+
 .description {
-  border-left: 1px solid #328cea;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
 }
 
 .description p {
   font-size: 20px;
+  color: rgb(198, 123, 49);
 }
 
 .description2 {
+  margin-bottom: 5px;
   text-align: right;
-  border-right: 1px solid #328cea;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
 }
 
 .description2 p {
   font-size: 20px;
+}
+
+@media (min-width:768px) {
+  .service-row {
+    margin-bottom: 20px;
+  }
+
+  .icon-div {
+    text-align: center;
+  }
+
+  .description {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
+  }
+
+  .description p {
+    font-size: 20px;
+    color: rgb(198, 123, 49);
+  }
+
+  .description2 {
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
+  }
 }
 
 .team-member {
