@@ -34,12 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-section h2.section-heading {
+  color: rgb(2, 127, 189);
+  text-shadow: 0.5px 0.5px 1px #7A7A7A;
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 15px
 }
 
 .page-section h3.section-subheading {
+  color: rgb(2, 127, 189);
+  text-shadow: 0.5px 0.5px 1px #7A7A7A;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 50px;
@@ -101,10 +105,10 @@ img::-moz-selection {
 
 .bg-light {
   background-color: rgba(93, 158, 236, 0.2) !important;
-  color: rgb(2, 127, 189);
 }
 
-.bg-light h2, h4 {
+.bg-light h4{
+  color: rgb(2, 127, 189);
   text-shadow: 0.5px 0.5px 1px #7A7A7A;
 }
 
@@ -131,7 +135,8 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #3886c6
+  color: #3886c6;
+  text-shadow: 0.5px 0.5px 1px #7A7A7A;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -144,7 +149,8 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #3886c6
+  color: #3886c6;
+
 }
 
 @media (min-width:768px) {
@@ -214,7 +220,7 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text img {
-  width: 180px;
+  width: 250px;
 }
 
 header.masthead .carousel-indicators {
@@ -256,7 +262,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   header.masthead .intro-text {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 210px;
   }
 
@@ -276,8 +282,13 @@ header.masthead .intro-text .intro-heading {
   }
 
   header.masthead .intro-text img {
-    width: 50%;
-    margin-bottom: 10px;
+    width: 60%;
+  }
+}
+
+@media (min-width:1900px) {
+  header.masthead .intro-text img {
+    width: 90%;
   }
 }
 
@@ -291,6 +302,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .description {
+  margin: 0 10px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
@@ -302,6 +314,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .description2 {
+  margin: 0 10px;
   margin-bottom: 5px;
   text-align: right;
   border-radius: 10px;
@@ -323,6 +336,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   .description {
+    margin: 0;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
@@ -334,6 +348,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   .description2 {
+    margin: 0;
     margin-bottom: 5px;
     text-align: right;
     border-radius: 10px;
@@ -367,13 +382,18 @@ section#contact {
   padding: 50px 0;
 }
 
-section#contact .section-heading {
-  color: #000000
+section#contact h2{
+  margin-bottom: 40px;
 }
 
+
+
 @media (min-width:768px) {
-  section#contact .contact-phone {
-    border-left: 1px solid #ddd;
+  .headerDivider {
+     border-left:1px solid #ddd;
+     height:80px;
+     position: absolute;
+     right: 50%;
   }
 }
 
