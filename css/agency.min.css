@@ -107,7 +107,7 @@ img::-moz-selection {
   background-color: rgba(93, 158, 236, 0.2) !important;
 }
 
-.bg-light h4{
+.bg-light h4 {
   color: rgb(2, 127, 189);
   text-shadow: 0.5px 0.5px 1px #7A7A7A;
 }
@@ -150,7 +150,6 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #3886c6;
-
 }
 
 @media (min-width:768px) {
@@ -292,6 +291,11 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.about-img {
+  align: center;
+  width: 85%;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none
@@ -382,18 +386,16 @@ section#contact {
   padding: 50px 0;
 }
 
-section#contact h2{
+section#contact h2 {
   margin-bottom: 40px;
 }
 
-
-
 @media (min-width:768px) {
   .headerDivider {
-     border-left:1px solid #ddd;
-     height:80px;
-     position: absolute;
-     right: 50%;
+    border-left: 1px solid #ddd;
+    height: 80px;
+    position: absolute;
+    right: 50%;
   }
 }
 

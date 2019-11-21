@@ -24,7 +24,7 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="img/Logo.ico" />
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body id="page-top">
@@ -64,14 +64,14 @@
     <div id="carousel" class="carousel slide" data-ride="carousel">
 
       <div class="carousel-inner">
+        <div class="carousel-item background item">
+          <img class="d-block w-100" src="img/carousel/carousel01.png" alt="First slide">
+        </div>
         <div class="carousel-item background active item">
-          <img class="d-block w-100" src="img/carousel/carousel01.jpeg" alt="First slide">
+          <img class="d-block w-100" src="img/carousel/carousel02.jpg" alt="Second slide">
         </div>
         <div class="carousel-item background item">
-          <img class="d-block w-100" src="img/carousel/carousel02.jpeg" alt="Second slide">
-        </div>
-        <div class="carousel-item background item">
-          <img class="d-block w-100" src="img/carousel/carousel03.jpeg" alt="Third slide">
+          <img class="d-block w-100" src="img/carousel/carousel03.jpg" alt="Third slide">
         </div>
       </div>
 
@@ -80,8 +80,8 @@
           <img src="img/Logo.png" class="img-fluid" alt="Responsive image">
           <!--Indicadores-->
           <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1" class="active"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
           </ol>
         </div>
@@ -98,19 +98,33 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Nossa história</h2>
         </div>
+        <div class="row justify-content-lg-center">
+          <div class="col col">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ante id aliquam tempus. Pellentesque fringilla ante sit amet diam blandit tempus. In feugiat tempor purus, ut faucibus neque aliquet ut. Nunc
+              tincidunt finibus ex,
+              non laoreet risus vulputate vehicula. Sed ut pellentesque erat. Nam auctor, orci sed maximus fringilla, lacus leo auctor lacus, et dapibus libero turpis ac velit. Ut lobortis eu sem vitae vestibulum. Duis luctus odio ac congue
+              condimentum. Suspendisse convallis pharetra ante, eu consectetur nisi placerat at. Donec eu nibh est. Cras erat justo, laoreet quis suscipit et, faucibus quis augue. In velit nisl, molestie at nunc ac, dignissim placerat elit. Aliquam
+              elementum metus quis neque tincidunt, at luctus enim tempor. Duis lobortis enim ut sapien rutrum tincidunt vel vitae elit.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="col col justify-content-center">
+            <img src="img/about.jpeg" class="img-fluid rounded about-img" alt="Responsive image">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="bg-light page-section" id="services">
+  <section class=" bg-light page-section" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Serviços</h2>
         </div>
       </div>
-      <div class="row service-row">
+      <div data-aos="fade-right" class="row service-row">
         <div class="col-md-4 icon-div">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -122,7 +136,7 @@
           <p class="text-muted">Conteúdo</p>
         </div>
       </div>
-      <div class="row service-row">
+      <div data-aos="fade-left" class="row service-row">
         <div class="col-md-8 description2">
           <p class="text-muted">Conteúdo</p>
         </div>
@@ -160,7 +174,7 @@
           <h3 class="section-subheading text-muted">Profissionais que atuam no NANP</h3>
         </div>
       </div>
-      <div class="row">
+      <div data-aos="fade-up" class="row">
         <div class="col-sm-6">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpeg" alt="">
@@ -188,7 +202,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 text-center">
+        <div data-aos="fade-right" data-aos-duration="1000" class="col-md-6 text-center">
           <div class="contact-address">
             <i class="fas fa-map-marker-alt fa-2x text-primary fa-inverse"></i>
             <h3 class="text-uppercase">Endereço</h3>
@@ -196,7 +210,7 @@
           </div>
         </div>
         <div class="headerDivider"></div>
-        <div class="col-md-6 text-center">
+        <div data-aos="fade-left" data-aos-duration="1200" class="col-md-6 text-center">
           <div class="contact-phone">
             <i class="fas fa-phone-alt fa-2x text-primary"></i>
             <h3 class="text-uppercase">Telefone</h3>
@@ -205,7 +219,7 @@
         </div>
       </div>
       <div class="row align-center">
-        <div class="col-lg-12">
+        <div data-aos="fade-down" data-aos-duration="1000" class="col-lg-12">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.247441996569!2d-35.212202186086174!3d-5.820687195782315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fff30dc13bbd%3A0x2c8640fda09bf153!2sCTC%20-%20Corporate%20Tower%20Center!5e0!3m2!1spt-BR!2sbr!4v1572711816523!5m2!1spt-BR!2sbr"
             width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -238,6 +252,11 @@
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
 
+  <!-- aos animate -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
