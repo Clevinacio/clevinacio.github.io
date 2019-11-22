@@ -131,6 +131,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: bold;
   color: #3886c6;
+  text-shadow: 1px 1px 1px #393939;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -167,7 +168,8 @@ img::-moz-selection {
   }
 
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important
+    padding: 1.1em 1em !important;
+    text-shadow: 1px 1px 1px #666666;
   }
 
   #mainNav.navbar-shrink {
@@ -194,18 +196,19 @@ header#carousel .background {
 }
 
 .carousel-inner {
-  max-height: 260px;
+  max-height: auto;
   position: absolute;
 }
 
 header.masthead {
   text-align: center;
   width: 100%;
+  height: auto;
   position: relative;
 }
 
 header.masthead .container {
-  height: 260px;
+  height: 200px;
   position: relative;
   margin: 0 auto;
 }
@@ -213,17 +216,9 @@ header.masthead .container {
 header.masthead .intro-text {
   color: white;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 10px;
   text-shadow: 1px 1px 1px #666666;
-}
-
-header.masthead .intro-text img {
-  width: 250px;
-}
-
-header.masthead .carousel-indicators {
-  position: relative;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -240,7 +235,11 @@ header.masthead .intro-text .intro-heading {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-@media (min-width:903px) {
+header.masthead .intro-text img {
+  width: 200px;
+}
+
+@media (min-width:900px) {
   .carousel-inner {
     max-height: 100vh;
     position: absolute;
@@ -285,15 +284,35 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-@media (min-width:1900px) {
+@media (min-width:1700px) {
   header.masthead .intro-text img {
-    width: 90%;
+    width: 80%;
   }
 }
 
 .about-img {
   align: center;
-  width: 85%;
+  width: 75%;
+  margin: 10px;
+}
+
+.about-row {
+  margin: 0 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .about-img {
+    align: center;
+    width: 85%;
+  }
+
+  .about-row {
+    margin: 0;
+    border-radius: 10px;
+    background-color: white;
+  }
 }
 
 .service-heading {
@@ -320,7 +339,6 @@ header.masthead .intro-text .intro-heading {
 .description2 {
   margin: 0 10px;
   margin-bottom: 5px;
-  text-align: right;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
@@ -354,7 +372,6 @@ header.masthead .intro-text .intro-heading {
   .description2 {
     margin: 0;
     margin-bottom: 5px;
-    text-align: right;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 10px 23px 0 rgba(17, 20, 29, 0.21);
