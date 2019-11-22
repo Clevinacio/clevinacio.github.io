@@ -186,17 +186,17 @@ img::-moz-selection {
 
 header#carousel {
   position: relative;
-  height: auto;
+  height: 260px;
 }
 
 header#carousel .background {
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: 10%;
   background-repeat: no-repeat;
 }
 
 .carousel-inner {
-  max-height: auto;
+  max-height: 200px;
   position: absolute;
 }
 
