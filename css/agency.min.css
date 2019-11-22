@@ -189,15 +189,18 @@ header#carousel {
   height: 260px;
 }
 
-header#carousel .background {
-  background-position: center center;
-  background-size: 10%;
-  background-repeat: no-repeat;
-}
-
 .carousel-inner {
   max-height: 200px;
   position: absolute;
+}
+
+.carousel-inner img {
+  opacity: 0.5;
+}
+
+.background-color {
+  background-color: rgba(0, 152, 250, 0.65);
+  height: 200px;
 }
 
 header.masthead {
@@ -236,7 +239,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 header.masthead .intro-text img {
-  width: 200px;
+  width: 200px
 }
 
 @media (min-width:900px) {
@@ -250,6 +253,10 @@ header.masthead .intro-text img {
     width: 100%;
     height: 100vh;
     position: relative;
+  }
+
+  .background-color {
+    height: 100vh;
   }
 
   header.masthead .intro-text {
