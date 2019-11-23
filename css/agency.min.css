@@ -338,7 +338,7 @@ header.masthead .intro-text img {
 
 .description p {
   font-size: 20px;
-  color: rgb(198, 123, 49);
+  color: #6c757d !important
 }
 
 .description2 {
@@ -371,7 +371,6 @@ header.masthead .intro-text img {
 
   .description p {
     font-size: 20px;
-    color: rgb(198, 123, 49);
   }
 
   .description2 {
